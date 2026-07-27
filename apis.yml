@@ -1,7 +1,17 @@
 aid: goopti
 name: GoOpti
-description: GoOpti is a company surfaced as a portfolio company of point-nine and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  GoOpti is a European ground-transportation marketplace for affordable airport
+  transfers and intercity rides, connecting travelers with a network of vetted,
+  contractual transport partners. Founded in Slovenia, GoOpti offers both shared
+  (door-to-door pooled) and private transfers across Central and Southern Europe,
+  using dynamic pricing where earlier, more flexible bookings earn lower fares.
+  The company operates as a platform intermediary rather than a fleet owner, and
+  has served more than two million passengers. Alongside its consumer booking
+  site it runs B2B partner programs for agencies and resellers, corporate business
+  accounts, franchising, and affiliates. GoOpti is a portfolio company of
+  Point Nine and is tracked in the API Evangelist network. No public developer
+  API, SDK, or agent-facing surface has been identified at this time.
 url: https://raw.githubusercontent.com/api-evangelist/goopti/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +19,29 @@ x-backed-by:
 - point-nine
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://www.goopti.com/img/logo.svg
 tags:
 - Company
+- Transportation
+- Travel
+- Mobility
+- Airport Transfers
+- Ride Booking
+- Marketplace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/goopti-domain-security.yml
 - type: Website
   url: https://www.goopti.com
+- type: Support
+  url: https://www.goopti.com/en/help/faq
+- type: HelpCenter
+  url: https://www.goopti.com/en/help/faq
+- type: Blog
+  url: https://www.goopti.com/en/about/goopti_blog
+- type: TermsOfService
+  url: https://www.goopti.com/en/legal/terms-conditions
+- type: PrivacyPolicy
+  url: https://www.goopti.com/en/legal/privacy-cookies
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
